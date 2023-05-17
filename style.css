@@ -24,7 +24,7 @@ header {
 
 h1, .menu-naveg {
   color: white;
-  
+  text-transform: uppercase;
   padding: 10px;
   margin-top: 20px;
 
@@ -37,7 +37,6 @@ h1 {
 }
 
 .menu-naveg {
-  
   display: flex;
   flex-basis: clamp(400px, 50%, 550px);
   justify-content: space-evenly;
@@ -46,7 +45,6 @@ h1 {
 
 .menu-naveg > a {
   color: white;
-  
   display: flex;
   width: 20%;
   justify-content: center;
@@ -55,6 +53,11 @@ h1 {
   text-decoration: none;
   border-radius: 5px;
 
+}
+
+.menu-naveg > .nav--active {
+  color: black;
+  background-color: yellow;
 }
 
 a:hover {
@@ -75,7 +78,6 @@ main {
 }
 
 main > h2 {
-  
   width: clamp(300px, 80%, 900px);
   font-size: clamp(2em, 3.5em, 4.5em);
   text-transform: uppercase;
@@ -107,6 +109,11 @@ h3 {
   padding: 10px 0px 5px 0px;
   text-align: left;
   border-bottom: 2px solid yellow;
+}
+
+.price {
+  font-size: clamp(1.2em, 1.6em, 2em);
+  font-weight: bolder;
 }
 
 .planos > p {
