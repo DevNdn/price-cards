@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  
 }
 
 html, body {
@@ -16,16 +16,17 @@ header {
   background-color: black;
   border: 1px solid black;
   width: 100%;
-  padding: 30px;
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-content: center;
 }
 
 h1, .menu-naveg {
   color: white;
   border: 1px solid white;
   padding: 10px;
+  margin-top: 20px;
 
 }
 
@@ -56,7 +57,84 @@ h1 {
 
 }
 
-.menu-naveg > a:hover {
+a:hover {
   color: black;
   background-color: yellow;
 }
+
+main {
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main > h2 {
+  
+  border: 1px solid white;
+  width: clamp(600px, 80%, 900px);
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+#container {
+  border: 1px solid white;
+  width: clamp(500px, 90%, 1000px);
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.planos {
+  border: 1px solid white;
+  padding: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: clamp(1.2em, 1.6em, 2em);
+  padding: 5px;
+  text-align: left;
+  border-bottom: 2px solid yellow;
+}
+
+.planos > p {
+  font-size: clamp(0.8em, 1em, 1.2em);
+  margin-bottom: 35px;
+}
+
+.description {
+  flex-grow: 1;
+  border: 1px solid white;
+  list-style-type: circle;
+  list-style-position: inside;
+  list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 10 10"><circle fill="yellow" cx="7" cy="7" r="2"/></svg>');
+  font-size: clamp(0.9em, 1em, 1.2em);
+}
+
+.planos > a {
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  margin-top: 1px;
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  
+}
+
+a:hover {
+  color: black;
+  background-color: yellow;
+}
+
+
