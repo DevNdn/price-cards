@@ -55,9 +55,10 @@ h1 {
 
 }
 
-.menu-naveg > .nav--active {
+a.nav--active {
   color: black;
   background-color: yellow;
+  pointer-events: none;
 }
 
 a:hover {
@@ -82,6 +83,7 @@ main > h2 {
   font-size: clamp(2em, 3.5em, 4.5em);
   text-transform: uppercase;
   word-spacing: 5px;
+  letter-spacing: 3px;
   padding: 20px;
   text-align: center;
   
@@ -96,12 +98,13 @@ main > h2 {
 }
 
 .planos {
-  background-color: rgb(38, 38, 44);
+  background-color: #1f262c;
   border-radius: 5px;
   padding: 15px;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
+  box-shadow: 0px 1px 4px 0px rgba(255, 255, 0, 0.411);
 }
 
 h3 {
@@ -109,10 +112,11 @@ h3 {
   padding: 10px 0px 5px 0px;
   text-align: left;
   border-bottom: 2px solid yellow;
+  letter-spacing: 2px;
 }
 
 .price {
-  font-size: clamp(1.2em, 1.6em, 2em);
+  font-size: clamp(1em, 1.3em, 1.8em);
   font-weight: bolder;
 }
 
@@ -124,7 +128,6 @@ h3 {
 
 .description {
   flex-grow: 1;
-  
   list-style-type: circle;
   list-style-position: inside;
   list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 10 10"><circle fill="yellow" cx="7" cy="7" r="2"/></svg>');
@@ -139,6 +142,7 @@ h3 {
   padding: 20px;
   text-decoration: none;
   border-radius: 5px;
+  font-family: fantasy;  
   
 }
 
